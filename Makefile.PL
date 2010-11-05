@@ -26,7 +26,7 @@ test_requires 'Directory::Scratch';
 
 resources(
   'license', => 'http://dev.perl.org/licenses/',
-  'repository', => 'http://github.com/groditi/Cantella-Store-UUID',
+  'repository', => 'http://github.com/arcanez/Cantella-Store-UUID',
 );
 
 WriteAll;
