@@ -21,7 +21,7 @@ requires 'MooseX::Types::Data::GUID' => '0.001000';
 #tests
 test_requires 'Dir::Self';
 test_requires 'Test::More';
-test_requires 'Test::Exception';
+test_requires 'Test::Fatal';
 test_requires 'Directory::Scratch';
 
 resources(
