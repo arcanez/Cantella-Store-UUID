@@ -8,7 +8,7 @@ all_from 'lib/Cantella/Store/UUID.pm';
 
 requires 'JSON';
 requires 'Moose';
-requires 'Class::MOP';
+requires 'Class::Load' => '0.20';
 requires 'File::Copy';
 requires 'Data::GUID';
 requires 'Path::Class' => '0.18';

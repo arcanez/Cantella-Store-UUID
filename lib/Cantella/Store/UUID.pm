@@ -2,7 +2,7 @@ package Cantella::Store::UUID;
 
 use Moose;
 use Try::Tiny;
-use Class::MOP;
+use Class::Load;
 use Data::GUID;
 use File::Copy qw();
 use Path::Class qw();
@@ -32,7 +32,7 @@ has file_class => (
   isa => 'ClassName',
   required => 1,
   default => sub {
-    Class::MOP::load_class('Cantella::Store::UUID::File');
+    Class::Load::load_class('Cantella::Store::UUID::File');
     return 'Cantella::Store::UUID::File';
   }
 );
